@@ -8,6 +8,10 @@ h1,h3 {
     font:arial-serif;
 }
 
+label {
+    color:beige;
+}
+
 .mainTitle{
     font-weight: 100;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,64 @@
   <link rel="stylesheet" href="style.css">
   <title>Document 1</title>
 </head>
+
 <body>
-    <h1 class="mainTitle">AJOUTER DES FILMS</h1>
-    <hr class="gLaBarre">
-    <h3 class="text">
-      Le tri rapide est créé en 1960 par Tony Hoare,
-      alors étudiant en visite à l'université d'État de Moscou, 
-      lors d'une étude sur la traduction automatique pour le National Physical Laboratory. 
-      Il a alors besoin de l'algorithme pour trier les mots devant être traduits, 
-      afin de les faire correspondre à un dictionnaire russe-anglais déjà existant, 
-      stocké sur une bande magnétique
-    </h3>
-    <div class="addFilm">
-      
-    </div>
+  <h1 class="mainTitle">AJOUTER DES FILMS</h1>
+  <hr class="gLaBarre">
+  <h3 class="text">
+    Le tri rapide est créé en 1960 par Tony Hoare,
+    alors étudiant en visite à l'université d'État de Moscou,
+    lors d'une étude sur la traduction automatique pour le National Physical Laboratory.
+    Il a alors besoin de l'algorithme pour trier les mots devant être traduits,
+    afin de les faire correspondre à un dictionnaire russe-anglais déjà existant,
+    stocké sur une bande magnétique
+  </h3>
+  <div class="addFilm">
+    <form action="" method="get" class="form1">
+      <h3 class="text">AJOUTER UN FILM : </h3>
+      <table>
+        <tr>
+          <td>
+            <label>Nom du film : </label>
+          </td>
+          <td>
+            <input type="text" id="nom" name="nom" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Genre : </label>
+          </td>
+          <td>
+            <input type="text" id="genre" name="genre" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Année : </label>
+          </td>
+          <td>
+            <input type="text" id="year" name="year" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Note sur 7 : </label>
+          </td>
+          <td>
+            <input type="text" id="note" name="note" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="ajouter" />
+    </form>
+  </div>
 </body>
+
 </html>
