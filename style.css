@@ -5,7 +5,7 @@ body{
 h1,h3 {
     color: beige;
     text-align: center;
-    font:arial;
+    font:arial-serif;
 }
 
 .mainTitle{
@@ -14,11 +14,16 @@ h1,h3 {
 
 .text{
     margin: 0 20%;
-
 }
 
 .gLaBarre {
     color: beige;
     border: 2px solid;
     margin: 20px;
+}
+
+.addFilm{
+    margin: 0 20%;
+    border-color: beige;
+    border: 1px;
 }
