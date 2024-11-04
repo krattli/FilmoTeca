@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 
-h1,h3 {
+h1,h3,h2{
     color: beige;
     text-align: center;
     font:arial-serif;
@@ -13,18 +13,27 @@ label {
     padding: 20px;
 }
 
+table {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
 .mainTitle{
     font-weight: 100;
+    font-size: 50px;
+    margin: 20px 0 20px 0;
 }
 
 .text{
     margin: 0 20%;
+    margin-top: 20px;
+    border: 1px solid black;
 }
 
 .gLaBarre {
     color: beige;
     border: 2px solid;
-    margin: 20px;
 }
 
 .addFilm{
@@ -34,6 +43,41 @@ label {
 }
 
 .form1 {
+    margin: 20px 20%;
     border: 2px solid beige;
-    margin: 10px;
+}
+
+.submit {
+    border: 2px solid beige;
+    color: beige;
+    background-color: black;
+    width: 20%;
+    font-size: 12px;
+    margin: 20PX 50% 20px 40%;
+}
+
+.submit:hover {
+    border: 2px solid salmon;
+    color: salmon;
+}
+
+.input {
+    border: 1px solid beige;
+    background-color: black;
+    color: beige;
+}
+
+.input:focus {
+    border: 1px solid salmon;
+    color: salmon;
+}
+
+.box {
+    border: 2px solid beige;
+    margin: 20px 20% 0 20%;
+}
+
+.afficher:hover {
+    border: 1px solid salmon;
+    color: salmon;
 }
