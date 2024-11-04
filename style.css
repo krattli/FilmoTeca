@@ -10,6 +10,7 @@ h1,h3 {
 
 label {
     color:beige;
+    padding: 20px;
 }
 
 .mainTitle{
@@ -30,4 +31,9 @@ label {
     margin: 0 20%;
     border-color: beige;
     border: 1px;
+}
+
+.form1 {
+    border: 2px solid beige;
+    margin: 10px;
 }

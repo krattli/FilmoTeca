@@ -21,7 +21,7 @@
     stocké sur une bande magnétique
   </h3>
   <div class="addFilm">
-    <form action="" method="get" class="form1">
+    <form action="add.php" method="post" class="form1">
       <h3 class="text">AJOUTER UN FILM : </h3>
       <table>
         <tr>
@@ -29,7 +29,7 @@
             <label>Nom du film : </label>
           </td>
           <td>
-            <input type="text" id="nom" name="nom" required>
+            <input type="text" id="name" name="name" required>
           </td>
         </tr>
         <tr>
@@ -42,6 +42,14 @@
         </tr>
         <tr>
           <td>
+            <label>realisateur : </label>
+          </td>
+          <td>
+            <input type="text" id="director" name="director" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <label>Année : </label>
           </td>
           <td>
@@ -50,10 +58,18 @@
         </tr>
         <tr>
           <td>
+            <label>Synopsis : </label>
+          </td>
+          <td>
+            <input type="textarea" id="synopsis" name="synopsis" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <label>Note sur 7 : </label>
           </td>
           <td>
-            <input type="text" id="note" name="note" required>
+            <input type="note" id="note" name="nombre" required>
           </td>
         </tr>
         <tr>
@@ -63,7 +79,7 @@
           </td>
         </tr>
       </table>
-      <input type="submit" value="ajouter" />
+      <input type="submit" value="ajouter" style="position:static;"/>
     </form>
   </div>
 </body>
