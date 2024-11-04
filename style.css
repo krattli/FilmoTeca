@@ -1,4 +1,4 @@
-h1{
+.mainTitle{
     color:beige;
     text-align: center;
     font:arial;
@@ -6,4 +6,10 @@ h1{
 }
 body{
     background-color: black;
+}
+
+.gLaBarre {
+    color: beige;
+    border: 2px solid;
+    margin: 20px;
 }
