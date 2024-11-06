@@ -24,9 +24,6 @@ echo $name;
 $stmt = $conn->prepare("INSERT INTO Films (title, year, synopsis, director, genre, created_at, note) VALUES (?, ?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("sissssi",$name, $year, $synopsis, $director, $genre, $date, $note);
 
-$sql = "INSERT INTO Films (title, year, synopsis, director, genre, created_at, note) 
-                VALUES ($name, $year, $synopsis, $director, $genre, $date, $note)";
-
 if ($stmt->execute()) {
     echo "Le film a été ajouté avec succès.";
 } else {
