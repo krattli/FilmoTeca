@@ -10,7 +10,6 @@ echo "Connexion établie avec validation validée";
 $name = $_POST['name'];
 $genre = $_POST['genre'];
 $year = $_POST['year'];
-$note = $_POST['note'];
 $director = $_POST['director'];
 $synopsis = $_POST['synopsis'];
 $date = date("Y-m-d");
@@ -21,8 +20,8 @@ echo $name;
  //   die("Échec de la connexion : " . $conn->connect_error);}
 
 
-$stmt = $conn->prepare("INSERT INTO Films (title, year, synopsis, director, genre, created_at, note) VALUES (?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sissssi",$name, $year, $synopsis, $director, $genre, $date, $note);
+$stmt = $conn->prepare("INSERT INTO Films (title, year, synopsis, director, genre, created_at) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("sissss",$name, $year, $synopsis, $director, $genre, $date);
 
 if ($stmt->execute()) {
     echo "Le film a été ajouté avec succès.";
