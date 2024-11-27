@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Mon Site{% endblock %}</title>
-    <!-- Lien Bootstrap -->
+    <title class="text-center display-1">{% block title %}Filmoteca{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -12,16 +11,28 @@
             color: beige;
         }
         .header, .footer {
-            background-color: #333;
+            background-color: black;
             padding: 15px 0;
             color: beige;
             text-align: center;
+        }
+        .header{
+            border-bottom: 2px solid beige;
+        }
+        .footer{
+            border-top: 2px solid beige;
+        }
+        .headTable{
+        color : #aa8d5b;
+        }
+        .tableText{
+            color : #c09345;
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Bienvenue sur Filmoteca</h1>
+        <h1>FILMOTECA</h1>
         <nav>
             <a href="/films/list" class="text-decoration-none text-light">Liste des films</a> |
             <a href="/films/create" class="text-decoration-none text-light">Ajouter un film</a>
