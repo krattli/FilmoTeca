@@ -6,6 +6,8 @@ namespace App\Controller;
 
 use App\Entity\Film;
 use App\Repository\FilmRepository;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
 class FilmController
 {
@@ -29,7 +31,15 @@ class FilmController
             $filmEntities[] = $filmEntity;
         } */
 
-        dd($films);
+        // Initialisation de twig
+        $loader = new FilesystemLoader(__DIR__ . '/../../src/views');
+        $twig = new Environment($loader);
+
+        // On passe tout les films à twig
+        echo $twig->render('list.html.twig', ['films' => $films]);
+
+
+        //dd($films);
 
         // header('Content-Type: application/json');
         // echo json_encode($films);

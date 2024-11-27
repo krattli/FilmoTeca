@@ -1,0 +1,28 @@
+{# src/views/list.html.twig #}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Films</title>
+    <link rel="stylesheet" href="/src/views/style.css"> <!-- Votre fichier CSS -->
+</head>
+<body>
+    <h1>Liste des Films</h1>
+
+    {% if films is not empty %}
+        <ul>
+            {% for film in films %}
+                <li>
+                    <strong>{{ film.title }}</strong> ({{ film.year }}) - {{ film.type }}<br>
+                    <em>{{ film.synopsis }}</em><br>
+                    <small>Réalisé par: {{ film.director }}</small><br>
+                    <small>Ajouté le: {{ film.createdAt|date("d/m/Y H:i") }}</small>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucun film trouvé.</p>
+    {% endif %}
+</body>
+</html>
