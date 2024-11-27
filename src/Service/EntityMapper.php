@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types=1); // Php fait des conversions automatiques entre les types. Ici, on demande à php d'ignorer ça
 
 namespace App\Service;
 
